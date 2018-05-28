@@ -13,7 +13,8 @@ try{
     die('Error : '.$e->getMessage());
 }
 
-$db = $_POST["vyber"];
+$db = $_POST["typ"];
+
 
 $sql = "INSERT INTO `data".$db."`(`id`, `datum_cas`, `helpdesk`, `jmeno_kontakt`, `jmenoMed`, 
 `kategorie`, `servisni_zasah`, `obecny_popis`, `predani_treti_zemi`, `poznamky`)
